@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "a421bf2a-dde3-4ae4-9a12-1d2a692bd164",
+		"name": "Theatre Ticket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ticket",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE2NzM3NTkwLCJpYXQiOjE2MTQxNDU1OTB9.HWeo2ID25jUVeX6jwEmtK6cnYW0q8e84jWz5LJoSrN_culeNwzXqCOzgDFWa4lmhdDTL4iyb4fHJsp4Ooy-PzA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"customerName\":\"Ravi_1\",\r\n   \"performanceTitle\":\"The Invisible Man\",\r\n   \"performanceTime\":\"23/02/2021 15:30\",\r\n   \"ticketPrice\":\"600\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/theatre/api/v1/ticket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"api",
+						"v1",
+						"ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticket",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE2NzM3NTkwLCJpYXQiOjE2MTQxNDU1OTB9.HWeo2ID25jUVeX6jwEmtK6cnYW0q8e84jWz5LJoSrN_culeNwzXqCOzgDFWa4lmhdDTL4iyb4fHJsp4Ooy-PzA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/theatre/api/v1/ticket/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"api",
+						"v1",
+						"ticket",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticket",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE2NzM3NTkwLCJpYXQiOjE2MTQxNDU1OTB9.HWeo2ID25jUVeX6jwEmtK6cnYW0q8e84jWz5LJoSrN_culeNwzXqCOzgDFWa4lmhdDTL4iyb4fHJsp4Ooy-PzA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"Rakesh\",\r\n    \"performanceTitle\": \"Uppena\",\r\n    \"performanceTime\": \"23/02/2021 16:30\",\r\n    \"ticketPrice\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/theatre/api/v1/ticket/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"api",
+						"v1",
+						"ticket",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticket",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE2NzM3NTkwLCJpYXQiOjE2MTQxNDU1OTB9.HWeo2ID25jUVeX6jwEmtK6cnYW0q8e84jWz5LJoSrN_culeNwzXqCOzgDFWa4lmhdDTL4iyb4fHJsp4Ooy-PzA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/theatre/api/v1/ticket/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"api",
+						"v1",
+						"ticket",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "People Visited Analytics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE2NzM3NTkwLCJpYXQiOjE2MTQxNDU1OTB9.HWeo2ID25jUVeX6jwEmtK6cnYW0q8e84jWz5LJoSrN_culeNwzXqCOzgDFWa4lmhdDTL4iyb4fHJsp4Ooy-PzA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/theatre/api/v1/ticket/analytics/people/visited?fromDate=01/01/2021&toDate=24/02/2021",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"api",
+						"v1",
+						"ticket",
+						"analytics",
+						"people",
+						"visited"
+					],
+					"query": [
+						{
+							"key": "fromDate",
+							"value": "01/01/2021"
+						},
+						{
+							"key": "toDate",
+							"value": "24/02/2021"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Money Earned Analytics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjE2NzM3NTkwLCJpYXQiOjE2MTQxNDU1OTB9.HWeo2ID25jUVeX6jwEmtK6cnYW0q8e84jWz5LJoSrN_culeNwzXqCOzgDFWa4lmhdDTL4iyb4fHJsp4Ooy-PzA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/theatre/api/v1/ticket/analytics/money/earned?fromDate=01/01/2021&toDate=25/02/2021",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"theatre",
+						"api",
+						"v1",
+						"ticket",
+						"analytics",
+						"money",
+						"earned"
+					],
+					"query": [
+						{
+							"key": "fromDate",
+							"value": "01/01/2021"
+						},
+						{
+							"key": "toDate",
+							"value": "25/02/2021"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

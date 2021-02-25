@@ -24,10 +24,20 @@ Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/
 mvn spring-boot:run
 ```
 
-You can also run the below command from target directory to execute the application
+You can also run the below command from dist directory to execute the application
 
 ```shell
 java -jar theatre-ticket-1.0.jar
 ```
 
+## Swagger URL
 
+Please find the below Swagger URL for documentation
+
+```shell
+http://localhost:8080/theatre/api/swagger-ui.html
+```
+
+## POSTMAN Collection
+
+Please find the 'Theatre Ticket.postman_collection.json' for your reference.
